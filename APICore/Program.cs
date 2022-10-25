@@ -71,6 +71,8 @@ namespace APICore
             //========= SEGUNDO =========
             app.UseCors(misReglasCors);
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
             app.MapControllers();
